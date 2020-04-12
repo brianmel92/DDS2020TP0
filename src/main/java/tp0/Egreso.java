@@ -36,7 +36,7 @@ public class Egreso {
 			
 			//chequeo que el articulo sea un servicio
 			if(documentoAsoc.isRemito()) { 
-				if(!temp.servicio) { //si no es un servicio, le saco la propiedad de remito al documento asociado
+				if(temp.servicio) { //si es un servicio, deja de tener un remito asociado
 					documentoAsoc.setRemito(false);
 				}
 			}
